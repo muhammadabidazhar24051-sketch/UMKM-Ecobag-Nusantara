@@ -12,11 +12,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  animation: fadeInSmooth 1.4s ease-out both;
 }
 
+
+/* header (judul halaman) */
 h2, h3 {
-  color: #2e8b57;
+  color: #030906;
   text-align: center;
 }
 
@@ -245,7 +246,7 @@ tr:hover {
   color: #1b5e20;
 }
 
-/* Jquery card produk */
+/* card produk bagian nama produk */
 .card .card-body {
   text-align: center;
 }
@@ -275,7 +276,7 @@ audio {
 .webinar-box h3 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #198754; /* warna hijau bootsrap */
+    color: #198754; 
 }
 
 /* INPUT & SELECT */
@@ -323,6 +324,7 @@ audio {
 .webinar-box button[type="submit"]:hover {
     background-color: #157347;
 }
+/* =============================================== */
 
 /* TOMBOL RESET */
 .webinar-box button[type="reset"] {
@@ -400,40 +402,4 @@ footer {
   padding: 15px 0;
   margin-top: auto;
   font-size: 0.9rem;
-}
-
-
-/* ============================================================
-   =============== 9. RESPONSIVE ===============================
-   ============================================================ */
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-  .card {
-    max-width: 90%;
-  }
-}
-
-
-/* ============================================================
-   =============== 10. ANIMASI ================================
-   ============================================================ */
-
-@keyframes fadeInSmooth {
-  0% {
-    opacity: 0;
-    transform: translateY(15px);
-    filter: blur(4px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(1px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
 }
