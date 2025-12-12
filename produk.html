@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk _ UMKM Ecobag Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery -->
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.jpeg" alt="Logo UMKM" width="40" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="tentang.html">Tentang Kami</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="produk.html">Produk</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="galeri.html">Galeri</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="Kontak.html">Kontak</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Produk Unggulan Kami</h2>
+        <p>Berikut daftar produk EcoBag Nusantara yang kami sediakan</p>
+
+        <table border="1" cellspacing="0" cellpadding="6">
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                    <th>Bahan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tote Bag</td>
+                    <td>38 x 40 cm</td>
+                    <td>Rp. 40.000</td>
+                    <td>Spanduk Bekas</td>
+                </tr>
+                <tr>
+                    <td>Sling Bag</td>
+                    <td>25 x 30 cm</td>
+                    <td>Rp 50.000</td>
+                    <td>Jeans Bekas</td>
+                </tr>
+                <tr>
+                    <td>Dompet Mini</td>
+                    <td>10 x 12 cm</td>
+                    <td>Rp. 20.000</td>
+                    <td>Plastik Sachet</td>
+                </tr>
+                <tr>
+                    <td>Tote Bag Patchwork</td>
+                    <td>35 x 38 cm</td>
+                    <td>Rp 55.000</td>
+                    <td>Kain Perca</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: center; background-color: #eee;">
+                        Semua produk sudah termasuk PPn
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- card produk bootstrap -->
+        <h3 class="mt-5 mb-3">Produk</h3>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="img/Tote Bag.jpeg"card-img-top alt="Produk 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Tote Bag</h5>
+                        <p class="card-text">Berbahan dari sepanduk bekas</p>
+                        <a href="#" class="btn btn-primary w-100"> Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="img/Sling Bag.jpeg"card-img-top alt="Produk 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Sling Bag</h5>
+                        <p class="card-text">Berbahan dari Jeans Bekas</p>
+                        <a href="#" class="btn btn-primary w-100"> Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="img/Dompet.jpeg"card-img-top alt="Produk 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dompet Mini</h5>
+                        <p class="card-text">Berbahan dari Plastik Sachet</p>
+                        <a href="#" class="btn btn-primary w-100"> Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="img/Tote Bag2.jpeg"card-img-top alt="Produk 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tote Bag Patchwork</h5>
+                        <p class="card-text">Berbahan dari Kain Perca</p>
+                        <a href="#" class="btn btn-primary w-100"> Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Dengarkan Cerita Kami</h3>
+        <audio controls>
+            <source src="AudioEcoBag.mp3" type="audio/mpeg">
+        </audio>
+
+    <!-- Percabangan -->
+    <section id="kategori-usia">
+      <h3>Cek Kategori Usia Pelanggan</h3>
+      <input type="number" id="usia" placeholder="Masukkan usia Anda">
+      <button onclick="cekUsia()">Cek Kategori</button>
+      <p id="hasilUsia"></p>
+    </section>
+
+    <!-- Perulangan -->
+    <section id="testimoni">
+      <h3>Testimoni Pelanggan</h3>
+      <div id="daftarTestimoni"></div>
+    </section>
+
+    <!-- Fungsi -->
+    <section id="total-belanja">
+      <h3>Hitung Total Belanja</h3>
+      <form onsubmit="hitungTotal(event)">
+        <label for="harga">Harga Satuan (Rp):</label><br>
+        <input type="number" id="harga" required><br><br>
+
+        <label for="jumlah">Jumlah:</label><br>
+        <input type="number" id="jumlah" required><br><br>
+
+        <button type="submit">Hitung</button>
+        <button type="reset">Reset</button>
+      </form>
+      <p id="hasilTotal"></p>
+    </section>
+
+    <script>
+        // Percabangan
+        function cekUsia() {
+            let usia = document.getElementById("usia").value;
+            let hasil = "";
+            
+            if (usia < 13) hasil = "Anak-anak";
+            else if (usia >= 13 && usia <= 17) hasil = "Remaja";
+            else if (usia >= 18 && usia <= 60) hasil = "Dewasa";
+            else hasil = "Lansia";
+            
+            document.getElementById("hasilUsia").textContent = "Kategori: " + hasil;
+        }
+
+        // Perulangan
+        const testimoni = [
+            "Produk sangat berkualitas dan ramah lingkungan!",
+            "Pengiriman cepat dan pelayanan memuaskan.",
+            "Desain tasnya unik dan kuat!",
+            "Harga terjangkau untuk produk sebaik ini.",
+            "Saya akan beli lagi, sangat rekomendasi!"
+        ];
+
+        const container = document.getElementById("daftarTestimoni");
+        testimoni.forEach(function(isi, i) {
+            let p = document.createElement("p");
+            p.textContent = (i + 1) + ". " + isi;
+            container.appendChild(p);
+        });
+
+        // Fungsi
+        function hitungTotal(event) {
+            event.preventDefault();
+            let harga = document.getElementById("harga").value;
+            let jumlah = document.getElementById("jumlah").value;
+            let total = harga * jumlah;
+            
+            document.getElementById("hasilTotal").textContent = 
+            "Total Belanja Anda: Rp " + total.toLocaleString("id-ID");
+        }
+
+    </script>
+
+
+
+    <div class="text-center my-4">
+        <a href="Webinar.html" class="btn btn-success btn-lg">
+        Daftar Webinar </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 EcoBag Nusantara</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".btn-primary").click(function (e) {
+                    e.preventDefault();
+                    alert("Terima kasih, produk akan segera diproses!");
+                });
+            });
+        </script>
+
+</body>
+</html>
