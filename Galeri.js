@@ -12,7 +12,6 @@ class Galeri {
     this.originalText = this.caption.textContent;
     this.caption.textContent = ""; // di sembunyikan awal
 
-    // Status toggle
     this.isVisible = false;
 
     // Event click dan hover

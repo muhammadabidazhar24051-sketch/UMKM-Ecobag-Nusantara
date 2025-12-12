@@ -369,6 +369,7 @@ audio {
   max-width: 280px;
   background-color: #ffffff;
   border-radius: 12px;
+  overflow: hidden; /* agar zoom in out gambar tidak keluar dari card*/
 }
 
 .card img {
@@ -376,6 +377,7 @@ audio {
   height: 220px;
   object-fit: cover;
 }
+
 
 
 /* ============================================================
