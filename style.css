@@ -15,7 +15,7 @@ body {
 }
 
 
-/* header (judul halaman) */
+/* header (Menu pilihan) */
 h2, h3 {
   color: #030906;
   text-align: center;
@@ -90,9 +90,11 @@ main {
   flex: 1;
 }
 
+
+/* === P text center === */
 main p:first-of-type,
 main p:nth-of-type(2) {
-  text-align: center;
+text-align: center;
 }
 
 main img {
@@ -114,7 +116,7 @@ main img {
   flex: 1;
 }
 
-/* Paksa semua teks di dalam kontainer tentang kami rata kiri */
+/* teks rata kiri */
 .tentang-container * {
     text-align: left !important;
 }
@@ -158,32 +160,37 @@ table {
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
+/* === jarak isi tabel === */
 th, td {
   border: 1px solid #cfe8cf;
   padding: 12px;
   text-align: left;
 }
 
+/* === background (judul kolom tabel) === */
 th {
   background-color: #3cb371;
   color: white;
 }
 
+/* === bg Kolom 3,5 ===  */
 tr:nth-child(even) {
   background-color: #f2fdf2;
 }
 
+/* === Hover untuk kolom 3,5 === */
 tr:hover {
   background-color: #e1f7e1;
 }
 
 
-/* Percabangan */
+/* kategori usia */
 #kategori-usia {
   text-align: center;
   margin-top: 20px;
 }
 
+/* === form cek usia === */
 #kategori-usia input,
 #kategori-usia button {
   margin: 5px;
@@ -191,16 +198,14 @@ tr:hover {
 }
 
 
-/* Perulangan */
+/* ==== Testimoni =====  */
+/* === Text Center === */
 #testimoni {
   text-align: center;
   margin-top: 30px;
 }
 
-#testimoni h3 {
-  margin-bottom: 10px;
-}
-
+/* === Daftar testimoni pelanggan === */
 #daftarTestimoni p {
   background-color: #f3f3f3;
   display: inline-block;
@@ -209,12 +214,13 @@ tr:hover {
   border-radius: 6px;
 }
 
-/* Fungsi */
+/* == set Form center - total belanja == */
 #total-belanja {
   text-align: center;
   margin-top: 30px;
 }
 
+/* == form total belamja == */
 #total-belanja form {
   display: inline-block;
   text-align: left;
@@ -223,17 +229,19 @@ tr:hover {
   border-radius: 10px;
   background-color: #f9f9f9;
 }
-
+/* === jarak antar input === */
 #total-belanja input {
   margin: 5px 0;
   padding: 6px;
   width: 180px;
 }
 
+/* === Hitung total belanja === */
+/* ========= Tombol =========== */
 #total-belanja button {
   background-color: #2e7d32;
   color: white;
-  border: none;
+  border: none;      /* garis tepi */
   padding: 8px 14px;
   border-radius: 6px;
   margin: 10px auto;
@@ -276,7 +284,7 @@ audio {
 .webinar-box h3 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #198754; 
+    color: #030a07; 
 }
 
 /* INPUT & SELECT */
@@ -286,17 +294,17 @@ audio {
     width: 100%;
     padding: 10px 12px;
     font-size: 15px;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #090909;
     border-radius: 8px;
     outline: none;
     transition: 0.3s;
 }
 
-/* EFEK KETIKA FOKUS INPUT */
+/* EFEK KETIK SAAT SEDANG INPUT */
 .webinar-box input:focus,
 .webinar-box select:focus {
     border-color: #198754;
-    box-shadow: 0 0 5px rgba(25, 135, 84, 0.5);
+    box-shadow: 0 0 5px rgba(38, 247, 14, 0.5);
 }
 
 /* LABEL */
@@ -305,7 +313,7 @@ audio {
     font-size: 15px;
 }
 
-/* TOMBOL */
+/* TOMBOL Daftar */
 .webinar-box button {
     padding: 10px 18px;
     margin-right: 8px;
@@ -329,7 +337,7 @@ audio {
 /* TOMBOL RESET */
 .webinar-box button[type="reset"] {
     background-color: #e0e0e0;
-    color: #000;
+    color: #000;  /* "Reset" */
 }
 .webinar-box button[type="reset"]:hover {
     background-color: #cacaca;
@@ -358,10 +366,10 @@ audio {
 .galeri {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 25px;         /*  jarak card vertikal dan horizontal  */
   justify-content: center;
   padding: 30px;
-  background-color: #f9fff9;
+  background-color: #d3fdd3;
 }
 
 .card {
@@ -369,13 +377,13 @@ audio {
   max-width: 280px;
   background-color: #ffffff;
   border-radius: 12px;
-  overflow: hidden; /* agar zoom in out gambar tidak keluar dari card*/
+  overflow: hidden;     /* agar zoom in out gambar tidak keluar dari card*/
 }
 
 .card img {
   width: 100%;
   height: 220px;
-  object-fit: cover;
+  object-fit: cover;    /*Saat hover gambar tak akan keluar card*/
 }
 
 
