@@ -8,7 +8,7 @@ class Galeri {
     this.image = element.querySelector("img");
     this.caption = element.querySelector("p");
 
-    // Simpan teks asli dan di swmbunyikan terlebih dahulu
+    // hide text
     this.originalText = this.caption.textContent;
     this.caption.textContent = ""; // di sembunyikan awal
 
@@ -27,7 +27,7 @@ class Galeri {
   }
 
   toggleNama() {
-    const { alt } = this.image; // Destructuring alt
+    const { alt } = this.image; /* Mengambil atribut alt*/
 
     this.caption.textContent = this.isVisible ? "" : `📌 Nama Produk: ${alt}`;
     this.isVisible = !this.isVisible;
